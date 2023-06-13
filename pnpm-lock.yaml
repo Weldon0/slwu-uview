@@ -71,6 +71,9 @@ dependencies:
   flyio:
     specifier: ^0.6.2
     version: 0.6.2
+  uview-ui:
+    specifier: ^2.0.36
+    version: 2.0.36
   vue:
     specifier: '>= 2.6.14 < 2.7'
     version: 2.6.14
@@ -135,10 +138,16 @@ devDependencies:
     version: 0.0.1
   miniprogram-api-typings:
     specifier: '*'
-    version: 2.4.0-1
+    version: 3.10.0
   postcss-comment:
     specifier: ^2.0.0
     version: 2.0.0
+  sass:
+    specifier: ^1.63.3
+    version: 1.63.3
+  scss-loader:
+    specifier: ^0.0.1
+    version: 0.0.1
   vue-template-compiler:
     specifier: '>= 2.6.14 < 2.7'
     version: 2.6.14
@@ -6802,6 +6811,10 @@ packages:
     resolution: {integrity: sha512-XXOFtyqDjNDAQxVfYxuF7g9Il/IbWmmlQg2MYKOH8ExIT1qg6xc4zyS3HaEEATgs1btfzxq15ciUiY7gjSXRGQ==}
     dev: false
 
+  /immutable@4.3.0:
+    resolution: {integrity: sha512-0AOCmOip+xgJwEVTQj1EfiDDOkPmuyllDuTuEX+DDXUgapLAsBIfkg3sxCYyCEA8mQqZrrxPUGjcOQ2JS3WLkg==}
+    dev: true
+
   /import-fresh@3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
     engines: {node: '>=6'}
@@ -8365,8 +8378,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /miniprogram-api-typings@2.4.0-1:
-    resolution: {integrity: sha512-DW/TB3XkvKMrkv7KNbvSfZfxxI2wARes0933IUPWoTo0IOSaoJCN/3b7cNsrRKOHSUgESwchyDuu3+REDt3skQ==}
+  /miniprogram-api-typings@3.10.0:
+    resolution: {integrity: sha512-pvGZmj9uamahlqfPj1bwn5Cd/bjImc5ehyAha/QfA9limG6HO9Plj/yROfSChK6J6+VUoVB9cnNthx4XuI0T2Q==}
     dev: true
 
   /mississippi@3.0.0:
@@ -10133,6 +10146,16 @@ packages:
       - supports-color
     dev: true
 
+  /sass@1.63.3:
+    resolution: {integrity: sha512-ySdXN+DVpfwq49jG1+hmtDslYqpS7SkOR5GpF6o2bmb1RL/xS+wvPmegMvMywyfsmAV6p7TgwXYGrCZIFFbAHg==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 3.5.3
+      immutable: 4.3.0
+      source-map-js: 1.0.2
+    dev: true
+
   /sax@1.2.4:
     resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
     dev: true
@@ -10177,6 +10200,10 @@ packages:
       ajv: 8.12.0
       ajv-formats: 2.1.1(ajv@8.12.0)
       ajv-keywords: 5.1.0(ajv@8.12.0)
+    dev: true
+
+  /scss-loader@0.0.1:
+    resolution: {integrity: sha512-SbT/smRJjkvvdHSEdAYAplosVkrtaSwwgUlnQCOuDS5sOKNjrS/eYCMvKeV6+YxK5cCOCsOJZd3vltrXatFp+g==}
     dev: true
 
   /select-hose@2.0.0:
@@ -11320,6 +11347,11 @@ packages:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     hasBin: true
     dev: true
+
+  /uview-ui@2.0.36:
+    resolution: {integrity: sha512-ASSZT6M8w3GTO1eFPbsgEFV0U5UujK+8pTNr+MSUbRNcRMC1u63DDTLJVeArV91kWM0bfAexK3SK9pnTqF9TtA==}
+    engines: {HBuilderX: ^3.1.0}
+    dev: false
 
   /v8-to-istanbul@4.1.4:
     resolution: {integrity: sha512-Rw6vJHj1mbdK8edjR7+zuJrpDtKIgNdAvTSAcpYfgMIw+u2dPDntD3dgN4XQFLU2/fvFQdzj+EeSGfd/jnY5fQ==}
